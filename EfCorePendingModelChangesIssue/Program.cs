@@ -22,6 +22,8 @@ Application throws:
        at Program.<Main>(String[] args)
  */
 
+SQLitePCL.Batteries.Init();
+
 using var db = new DemoDbContext();
 await db.Database.MigrateAsync();
 
