@@ -60,7 +60,7 @@ public partial class EfCore09 : Migration
     }
 ```
 
-After updating to Microsoft.EntityFrameworkCore.Sqlite & Microsoft.EntityFrameworkCore.Design 10.0.3, `MigrateAsync` fails with `PendingModelChangesWarning`, see stack trace below.
+After updating to Microsoft.EntityFrameworkCore.Sqlite & Microsoft.EntityFrameworkCore.Design 10.0.5, `MigrateAsync` fails with `PendingModelChangesWarning`, see stack trace below.
 
 EF Core seems to detect model changes for the "Value_Value" column, even though there aren't any.
 

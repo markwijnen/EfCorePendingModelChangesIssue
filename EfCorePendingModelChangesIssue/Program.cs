@@ -8,7 +8,7 @@ Add efcore 9.0.13 and create initial migration:
 
 Application runs without exceptions.
 
-Update to efcore 10.0.3 and run project:
+Update to efcore 10.0.5 and run project:
     dotnet package update
     dotnet run
 
