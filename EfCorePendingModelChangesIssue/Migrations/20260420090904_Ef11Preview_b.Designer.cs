@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -9,14 +10,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EfCorePendingModelChangesIssue.Migrations
 {
     [DbContext(typeof(DemoDbContext))]
-    partial class DemoDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260420090904_Ef11Preview_b")]
+    partial class _20260420090904_Ef11Preview_b
     {
-        // If you encounter a merge conflict in the line below, it means you need to
-        // discard one of the migration branches and recreate its migrations on top of
-        // the other branch. See https://aka.ms/efcore-docs-migrations-conflicts for more info.
-        public override string LatestMigrationId => "20260420090904_Ef11Preview_b";
-
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "11.0.0-preview.4.26215.121");
